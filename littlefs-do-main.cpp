@@ -556,22 +556,22 @@ int command_settings(const std::string &program_name, const std::vector<std::str
     std::cout << "Chimes: " << static_cast<int>(chimes) << " " << chimes_str << std::endl;
   }
   auto color_str = [](auto c) {
-    if (c == Settings::Colors::White) return "White";
-    if (c == Settings::Colors::Silver) return "Silver";
-    if (c == Settings::Colors::Gray) return "Gray";
-    if (c == Settings::Colors::Black) return "Black";
-    if (c == Settings::Colors::Red) return "Red";
-    if (c == Settings::Colors::Maroon) return "Maroon";
-    if (c == Settings::Colors::Yellow) return "Yellow";
-    if (c == Settings::Colors::Olive) return "Olive";
-    if (c == Settings::Colors::Lime) return "Lime";
-    if (c == Settings::Colors::Green) return "Cyan";
-    if (c == Settings::Colors::Teal) return "Teal";
-    if (c == Settings::Colors::Blue) return "Blue";
-    if (c == Settings::Colors::Navy) return "Navy";
-    if (c == Settings::Colors::Magenta) return "Magenta";
-    if (c == Settings::Colors::Purple) return "Purple";
-    if (c == Settings::Colors::Orange) return "Orange";
+    if (c == Colors::Named::White) return "White";
+    if (c == Colors::Named::Silver) return "Silver";
+    if (c == Colors::Named::Gray) return "Gray";
+    if (c == Colors::Named::Black) return "Black";
+    if (c == Colors::Named::Red) return "Red";
+    if (c == Colors::Named::Maroon) return "Maroon";
+    if (c == Colors::Named::Yellow) return "Yellow";
+    if (c == Colors::Named::Olive) return "Olive";
+    if (c == Colors::Named::Lime) return "Lime";
+    if (c == Colors::Named::Green) return "Cyan";
+    if (c == Colors::Named::Teal) return "Teal";
+    if (c == Colors::Named::Blue) return "Blue";
+    if (c == Colors::Named::Navy) return "Navy";
+    if (c == Colors::Named::Magenta) return "Magenta";
+    if (c == Colors::Named::Purple) return "Purple";
+    if (c == Colors::Named::Orange) return "Orange";
     return "unknown";
   };
   std::cout << "PTSColorTime: " << color_str(settingsController.GetPTSColorTime()) << std::endl;
